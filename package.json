@@ -1,0 +1,25 @@
+{
+  "name": "demo-express-jwt",
+  "version": "0.1.0",
+  "description": "Demo d'une WebAPI avec JWT",
+  "main": "app.js",
+  "scripts": {
+    "start": "node --env-file=.env app.js",
+    "dev": "nodemon --env-file=.env app.js"
+  },
+  "keywords": [
+    "Interface3",
+    "Web",
+    "API"
+  ],
+  "author": "Aurélien St",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^4.21.1",
+    "jsonwebtoken": "^9.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}
