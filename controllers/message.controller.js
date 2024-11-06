@@ -7,8 +7,14 @@ const messageController = {
     },
 
     protected: function(req, res) {
+        if(!req.token) {
+            res.sendStatus(401);
+            return;
+        }
 
-        res.json(`Hello ???`);
+        const username = req.token.name;
+
+        res.json(`Hello ${username}`);
     }
 
 };
